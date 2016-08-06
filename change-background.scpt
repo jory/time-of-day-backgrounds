@@ -5,7 +5,8 @@ tell application "System Events"
      set listOfPictures to list folder directory without invisibles
 
      set hour to time of (current date) div hours
-     set i to hour / 9
+
+     set i to ((hour + 1) / 24) * (count of listOfPictures) as integer
 
      set imagePath to directory & item i of listOfPictures
 
