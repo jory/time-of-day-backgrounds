@@ -6,7 +6,7 @@ tell application "System Events"
 
      set hour to time of (current date) div hours
 
-     set i to ((hour + 1) / 24) * (count of listOfPictures) as integer
+     set i to (hour / 24) * ((count of listOfPictures) + 1) as integer
 
      set imagePath to directory & item i of listOfPictures
 
