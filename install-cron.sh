@@ -1,5 +1,5 @@
 #!/bin/sh
-NAME='change-backgrounds.scpt'
+NAME='change-background.scpt'
 PWD=`pwd`
 HAS_RUN=`(crontab -l 2> /dev/null) | grep "$NAME"`
 

@@ -1,3 +1,5 @@
+#!/usr/bin/osascript
+
 tell application "System Events"
      set currentPath to path of container of (path to me)
      set directory to currentPath & "images:"
